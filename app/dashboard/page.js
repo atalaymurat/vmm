@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 
 import Register from "@/components/Register";
 
-const index = () => {
+const Index = () => {
   const { data: session, status } = useSession();
   if (status === "authenticated") {
     return (
@@ -21,4 +21,4 @@ const index = () => {
   }
 };
 
-export default index;
+export default Index;
